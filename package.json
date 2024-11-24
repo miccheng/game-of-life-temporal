@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "build": "tsc --build",
-    "build.watch": "tsc --build --watch",
+    "build:watch": "tsc --build --watch",
     "lint": "eslint .",
     "start": "tsx src/worker.ts",
-    "start.watch": "nodemon src/worker.ts",
+    "start:watch": "nodemon src/worker.ts",
     "workflow": "tsx src/client.ts",
     "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "test": "vitest run",
-    "foo": "vitest --config ./vitest.config.ts"
+    "test:watch": "vitest"
   },
   "nodemonConfig": {
     "execMap": {
